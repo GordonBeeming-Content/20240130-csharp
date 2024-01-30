@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿var permissions = Permissions.Full_manage;
+var checkFor = Permissions.Read_and_Write;
+
+Console.WriteLine($"checkFor: {checkFor}, has {permissions} = {permissions.HasFlag(checkFor)}");
